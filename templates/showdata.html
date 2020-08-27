@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>COVID-19 Results for: </h1>
+    <h2>{{fetchlist[0]['city']}}, {{fetchlist[0]['province']}}</h2>
+    <br>
+
+    <iframe width="600" height="450" frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key={{api_key}}&q={{fetchlist[0]['city']}},{{fetchlist[0]['province']}}&zoom=10"
+        allowfullscreen></iframe>
+    <br>
+
+    {% for fetchdata in fetchlist %}
+    Date: {{fetchdata['report_date']}}
+    Confirmed Cases: {{fetchdata['confirmed']}}
+    Deaths: {{fetchdata['deaths']}}
+    <br>
+    {% endfor %}
+</div>
+{% endblock content %}

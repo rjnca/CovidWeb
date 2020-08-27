@@ -1,0 +1,10 @@
+{
+    "python.pythonPath": "/Users/Ron/.local/share/virtualenvs/CovidWebpage-H6rCLNXo/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "python.autoComplete.extraPaths": [
+        "./**"
+    ],
+    "workbench.colorTheme": "Solarized Dark"
+}

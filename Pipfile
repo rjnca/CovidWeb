@@ -1,0 +1,28 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "*"
+pylint = "*"
+
+[packages]
+requests = "*"
+matplotlib = "*"
+pymysql = "*"
+flask = "*"
+wheel = "*"
+wtforms = "*"
+flask-wtf = "*"
+flask-mysql = "*"
+flask-sqlalchemy = "*"
+sqlalchemy = "*"
+regex = "*"
+bokeh = "*"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
